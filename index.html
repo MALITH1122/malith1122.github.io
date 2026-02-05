@@ -9,15 +9,150 @@
 </head>
 
 <body>
-  <header style="padding:20px;border-bottom:1px solid #ddd;">
-    <h2>Malith</h2>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home">Malith</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <button class="ghost" id="themeBtn" type="button">Theme</button>
+      </nav>
+    </div>
   </header>
 
-  <main style="padding:40px;">
-    <h1>Community Builder & Marketing Lead</h1>
-    <p>7+ years across Telegram, Discord, X, Reddit & LinkedIn.</p>
-    <p>Campaigns on Galxe & Zealy • KPI tracking • KYC & rewards ops.</p>
-    <p>📍 Sri Lanka | 🌍 Web3</p>
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-left">
+        <p class="tag">Community • Growth • Web3</p>
+        <h1>Community Builder & Marketing Lead</h1>
+        <p class="sub">
+          7+ years across Telegram, Discord, X, Reddit & LinkedIn.
+          Campaigns on Galxe/Zealy. KPI & sentiment tracking. KYC + rewards ops.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#contact">Let’s talk</a>
+          <a class="btn secondary" href="#work">See work</a>
+        </div>
+
+        <div class="meta">
+          <span>📍 Sri Lanka</span>
+          <span>🕒 GMT+5:30</span>
+          <span>💬 Telegram / Discord / X</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Quick Snapshot</h3>
+        <ul>
+          <li>Head of Community: SafeStake, Cosmic Champs</li>
+          <li>Moderator/CM: Algorand, Kava, Kylin, Nebulas</li>
+          <li>Built local communities + offline meetups</li>
+        </ul>
+        <div class="chips">
+          <span>Onboarding</span><span>Support</span><span>Growth</span><span>Partnerships</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I build organic communities and turn engagement into measurable growth.
+        I focus on clear communication, strong moderation, and campaigns that convert.
+      </p>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>SafeStake — Community / Support</h3>
+          <p class="muted">Social ops • Support tickets • Campaign execution</p>
+          <ul>
+            <li>Owned social handling during a transition period</li>
+            <li>Coordinated partnerships + marketing tools</li>
+            <li>Weekly team sync + roadmap updates</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Algorand — Moderator</h3>
+          <p class="muted">Events • Knowledge base • Community trust</p>
+          <ul>
+            <li>De-escalated disputes using resources + calm explanations</li>
+            <li>Improved consistency via internal guidelines</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Sri Lanka — Local Growth</h3>
+          <p class="muted">Meetups • University reach • Local-language content</p>
+          <ul>
+            <li>Crypto Influencers Club Sri Lanka</li>
+            <li>Local onboarding + offline sessions</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="chips big">
+        <span>Telegram</span><span>Discord</span><span>X</span><span>Reddit</span><span>LinkedIn</span>
+        <span>Notion</span><span>Google Sheets</span><span>Galxe</span><span>Zealy</span>
+        <span>KPI / OKRs</span><span>Sentiment Tracking</span><span>KYC + Rewards Ops</span>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2>Work</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Campaigns</h3>
+          <p class="muted">Galxe / Zealy / partner collabs</p>
+          <p>Built participation loops, tracked completion rates, and improved retention.</p>
+        </article>
+
+        <article class="card">
+          <h3>Community Systems</h3>
+          <p class="muted">Discord structure + onboarding</p>
+          <p>Roles, channels, automations, moderation workflows, documentation.</p>
+        </article>
+
+        <article class="card">
+          <h3>Content</h3>
+          <p class="muted">Education + announcements</p>
+          <p>Short explainers, FAQs, event promos, and community-led initiatives.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+
+      <div class="contact card">
+        <p class="muted">Add your links below:</p>
+        <div class="contact-links">
+          <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+          <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:your@email.com">Email</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Malith</span>
+      </footer>
+    </section>
   </main>
 
   <script src="script.js"></script>
